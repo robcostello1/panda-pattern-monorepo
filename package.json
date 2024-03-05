@@ -4,6 +4,11 @@
   "description": "## with-import-map-package",
   "main": "index.js",
   "scripts": {
+    "ui:prepare": "npm run -w @scootch/ui-lib prepare",
+    "ui:build": "npm run -w @scootch/web build",
+    "web:prepare": "npm run -w @scootch/web prepare",
+    "web:dev": "npm run -w @scootch/web dev",
+    "dev": "npm run ui:prepare && npm run ui:build && npm run web:prepare && npm run web:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

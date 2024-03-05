@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "panda:build": "panda codegen",
+    "prepare": "panda codegen",
     "build": "rm -rf dist && tsc -p tsconfig.build.json"
   },
   "dependencies": {
