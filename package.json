@@ -4,8 +4,9 @@
   "description": "## with-import-map-package",
   "main": "index.js",
   "scripts": {
+    "clean": "find . -type d -name 'node_modules' -exec rm -r {} + && find . -type d -name 'dist' -exec rm -r {} +",
     "ui:prepare": "npm run -w @scootch/ui-lib prepare",
-    "ui:build": "npm run -w @scootch/web build",
+    "ui:build": "npm run -w @scootch/ui-lib build",
     "web:prepare": "npm run -w @scootch/web prepare",
     "web:dev": "npm run -w @scootch/web dev",
     "dev": "npm run ui:prepare && npm run ui:build && npm run web:prepare && npm run web:dev",
