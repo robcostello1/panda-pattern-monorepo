@@ -15,5 +15,5 @@ export default defineConfig({
   ],
   jsxFramework: "react",
   outdir: STYLED_SYSTEM_PATH,
-  importMap: "@eonnext/styled-system",
+  importMap: "@scootch/styled-system",
 });

@@ -6,6 +6,6 @@ export default defineConfig({
   strictTokens: true,
   strictPropertyValues: true,
   jsxFramework: "react",
-  importMap: "@eonnext/styled-system",
+  importMap: "@scootch/styled-system",
   outdir: "../styled-system/dist",
 });
