@@ -1,11 +1,20 @@
 {
   "name": "@scootch/ui-lib",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "moduleResolution": "bundler",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "panda:build": "panda codegen",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@pandacss/dev": "^0.33.0",
+    "@scootch/styled-system": "^1.0.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.63",
+    "@types/react-dom": "^18.2.19"
+  }
 }
