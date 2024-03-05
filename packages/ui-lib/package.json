@@ -4,6 +4,12 @@
   "type": "module",
   "private": true,
   "moduleResolution": "bundler",
+  "exports": {
+    ".": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    }
+  },
   "scripts": {
     "panda:build": "panda codegen",
     "build": "rm -rf dist && tsc -p tsconfig.build.json"

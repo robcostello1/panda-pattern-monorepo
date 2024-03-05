@@ -1,10 +1,10 @@
-import { cx } from "@eonnext/styled-system/css";
+import { cx } from "@scootch/styled-system/css";
 import {
   type GridItemProps as StylesGridItemProps,
   type HTMLStyledProps,
   styled,
-} from "@eonnext/styled-system/jsx";
-import { gridItem } from "@eonnext/styled-system/patterns";
+} from "@scootch/styled-system/jsx";
+import { gridItem } from "@scootch/styled-system/patterns";
 import React, { useMemo } from "react";
 
 type GridItemAs = "div" | "li";
